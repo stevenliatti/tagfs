@@ -1,3 +1,9 @@
 [submodule "doc"]
 	path = doc
 	url = git@github.com:stevenliatti/doc-tagfs.git
+
+[submodule "tag_manager"]
+        path = tag_manager
+        url = git@github.com:stevenliatti/tag_manager.git
+
+
