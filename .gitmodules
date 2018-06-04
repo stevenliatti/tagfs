@@ -6,4 +6,7 @@
         path = tag_manager
         url = git@github.com:stevenliatti/tag_manager.git
 
+[submodule "tag_engine"]
+	path = tag_engine
+	url = git@github.com:stevenliatti/tag_engine.git
 
