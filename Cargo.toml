@@ -1,0 +1,6 @@
+[workspace]
+
+members = [
+    "tag_engine",
+    "tag_manager"
+]
