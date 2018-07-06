@@ -1,15 +1,18 @@
-
-graph:
-	rm -f /tmp/tag_engine
+debug:
 	cargo build
-	./target/debug/tag_engine
+	./target/debug/tag_engine /home/stevenliatti/a -d
 
 release:
-	rm -f /tmp/tag_engine
 	cargo build --release
-	./target/release/tag_engine
+	./target/release/tag_engine /home/stevenliatti/a
+
+report:
+	$(MAKE) report.pdf -C doc
 
 clean:
 	cargo clean
-	rm -rf graph.dot graph.jpg
+	$(MAKE) mostlyclean -C doc
+	rm -rf graph.dot graph.png
 	rm -f /tmp/tag_engine
+
+.PHONY: debug release report clean
